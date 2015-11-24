@@ -11,9 +11,7 @@ class Bear
   end
 
   def take_fish_from(place)
-    new_food = place.fish[-1].name
-    @food << new_food
-    place.fish.pop
+    @food << place.get_fish.name
   end
 
 end
